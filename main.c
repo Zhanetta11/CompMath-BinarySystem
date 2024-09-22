@@ -18,12 +18,31 @@ void convertIntegerPart(int integerPart) {
     for (int j = i - 1; j >= 0; j--) {
         printf("%d", binary[j]); 
     }
+    printf("\n");
 }
 
 
-void convertFractionalPart(double fractionalPart, int nk) {   
+void convertFractionalPart(double fractionalPart, int nk) {
+    int binaryFractional[64];
+    
+    for (int i = 0; i < 64; i++) {
+        binaryFractional[i] = 0;
+    }
+    
     if (fractionalPart == 0) {
-        printf("Fractional Part: 0\n");
+        binaryFractional[0] = 0;
+    } else {
+        for (int i = 0; i < nk; i++) {
+            fractionalPart *= 2; 
+            int bit = (int)fractionalPart;
+            binaryFractional[i] = bit; 
+            fractionalPart -= bit;
+        }
+    }
+    
+    printf("Fractional Part: ");
+    for (int i = 0; i < nk; i++) {
+        printf("%d", binaryFractional[i]);
     }
 }
 
