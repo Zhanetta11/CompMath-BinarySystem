@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+void convertIntegerPart(int integerPart) {
+    printf("%d\n", integerPart);
+}
+
+
 int main()
 {
     double myNum;
@@ -12,6 +17,8 @@ int main()
     int nk;
     printf("Enter nk: ");
     scanf("%d", &nk);
+    
+    convertIntegerPart(integerPart);
 
     return 0;
 }
