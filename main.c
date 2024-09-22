@@ -3,22 +3,22 @@
 void convertIntegerPart(int integerPart) {
     if (integerPart == 0) {
         printf("Integer Part: 0\n");
-    }
+    } else{
+        int binary[32]; 
+        int i = 0;
 
-    int binary[32]; 
-    int i = 0;
+        while (integerPart > 0) {
+           binary[i] = integerPart % 2;
+           integerPart /= 2; 
+           i++;
+        }
 
-    while (integerPart > 0) {
-        binary[i] = integerPart % 2;
-        integerPart /= 2; 
-        i++;
+        printf("Integer Part: ");
+        for (int j = i - 1; j >= 0; j--) {
+           printf("%d", binary[j]); 
+        }
+        printf("\n");
     }
-
-    printf("Integer Part: ");
-    for (int j = i - 1; j >= 0; j--) {
-        printf("%d", binary[j]); 
-    }
-    printf("\n");
 }
 
 
