@@ -13,6 +13,11 @@ void convertIntegerPart(int integerPart) {
         integerPart /= 2; 
         i++;
     }
+
+    printf("Integer Part: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]); 
+    }
 }
 
 
