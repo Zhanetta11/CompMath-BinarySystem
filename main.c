@@ -21,6 +21,11 @@ void convertIntegerPart(int integerPart) {
 }
 
 
+void convertFractionalPart(double fractionalPart, int nk) {   
+    
+}
+
+
 int main()
 {
     double myNum;
@@ -35,6 +40,7 @@ int main()
     scanf("%d", &nk);
     
     convertIntegerPart(integerPart);
+    convertFractionalPart (fractionalPart, nk);
 
     return 0;
 }
