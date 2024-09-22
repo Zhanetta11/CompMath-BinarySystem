@@ -2,7 +2,7 @@
 
 void convertIntegerPart(int integerPart) {
     if (integerPart == 0) {
-        printf("0\n");
+        printf("Integer Part: 0\n");
     }
 
     int binary[32]; 
@@ -22,7 +22,9 @@ void convertIntegerPart(int integerPart) {
 
 
 void convertFractionalPart(double fractionalPart, int nk) {   
-    
+    if (fractionalPart == 0) {
+        printf("Fractional Part: 0\n");
+    }
 }
 
 
