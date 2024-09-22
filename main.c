@@ -4,6 +4,9 @@ void convertIntegerPart(int integerPart) {
     if (integerPart == 0) {
         printf("0\n");
     }
+
+    int binary[32]; 
+    int i = 0;
 }
 
 
