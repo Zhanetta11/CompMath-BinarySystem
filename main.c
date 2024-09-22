@@ -7,6 +7,12 @@ void convertIntegerPart(int integerPart) {
 
     int binary[32]; 
     int i = 0;
+
+    while (integerPart > 0) {
+        binary[i] = integerPart % 2;
+        integerPart /= 2; 
+        i++;
+    }
 }
 
 
