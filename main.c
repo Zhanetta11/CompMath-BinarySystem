@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 void convertIntegerPart(int integerPart) {
-    printf("%d\n", integerPart);
+    if (integerPart == 0) {
+        printf("0\n");
+    }
 }
 
 
